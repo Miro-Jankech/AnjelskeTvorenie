@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #2c3e50;   /* deep slate blue-gray */
+  background-color: #E0F7FA;   /* deep slate blue-gray */
   height: 60px;
   padding: 0 30px;
-  color: #ecf0f1;              /* light gray text */
+  color: #0A3D62;              /* light gray text */
 }
 
 .upperMenu ul {
@@ -28,8 +28,7 @@
 }
 
 .upperMenu .title:hover {
-  color: #f1c40f;
-  cursor: pointer;  
+  color: #f1c40f;  
 }
 
 .title {
@@ -38,3 +37,4 @@
   font-family: "Georgia", serif; 
   letter-spacing: 1px;
 }
+
