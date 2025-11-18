@@ -1,5 +1,0 @@
-img {
-  width: 100%;
-  object-fit: cover;    /* scales the image nicely without distortion */
-  display: block;       /* removes extra bottom space under the image */
-}

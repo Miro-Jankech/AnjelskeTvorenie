@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from "./menu/menu.component";
+import { SidemenuComponent } from "./sidemenu/sidemenu.component";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  imports: [HeaderComponent, MenuComponent],
+  imports: [MenuComponent, SidemenuComponent],
 })
 export class AppComponent {
 }

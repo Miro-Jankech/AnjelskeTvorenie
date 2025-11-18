@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-
+  images: string[] = [
+    'atPix/figures/family.jpg'
+  ]
 }
