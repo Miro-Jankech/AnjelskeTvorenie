@@ -1,18 +1,19 @@
 .upperMenu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #E0F7FA;   /* deep slate blue-gray */
+  justify-content:space-between;  
   height: 60px;
   padding: 0 30px;
-  color: #0A3D62;              /* light gray text */
+  color: #0A3D62;     
+  margin-top: 10px;
+  margin-bottom: 10px;    
 }
 
 .upperMenu ul {
   list-style: none;
   display: flex;
-  gap: 25px;
-  margin: 0;
+  gap: 35px;
+  margin-right: 100px;
   padding: 0;
 }
 
@@ -21,10 +22,22 @@
   align-items: center;
   cursor: pointer;
   transition: color 0.3s ease;
+  font-size : large;
 }
 
+.upperMenu ul li a {
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* inherits the parent color (#0A3D62) */
+  transition: color 0.3s ease;
+}
+
+.upperMenu ul li a:hover {
+  color: #f1c40f;          /* gold accent on hover */
+}
+
+
 .upperMenu ul li:hover {
-  color: #f1c40f;              /* elegant gold accent on hover */
+  color: #f1c40f;              /*gold accent on hover */
 }
 
 .upperMenu .title:hover {
@@ -36,5 +49,6 @@
   font-weight: 600;
   font-family: "Georgia", serif; 
   letter-spacing: 1px;
+  margin-left:370px ;
 }
 

@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './sidemenu.component.css'
 })
 export class SidemenuComponent {
+  marcameVisible : boolean = false;
 
+  getDropDown() {
+    this.marcameVisible = true;
+  }
 }

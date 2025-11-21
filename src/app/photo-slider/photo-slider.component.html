@@ -1,0 +1,14 @@
+<div class="slider-container">
+  <button class="nav-button left" (click)="prevImage()">&#10094;</button>
+
+  <div class="image-wrapper"
+       (mouseenter)="pauseProgress()"
+       (mouseleave)="resumeProgress()">
+    <img [src]="imgSlider[sliderIndex]" alt="Slider Image">
+    <div class="progress-bar">
+      <div class="progress-fill" [style.width.%]="progress"></div>
+    </div>
+  </div>
+
+  <button class="nav-button right" (click)="nextImage()">&#10095;</button>
+</div>

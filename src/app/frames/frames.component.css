@@ -1,0 +1,14 @@
+.frames {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 0 20px;             /* outside margin stays */
+  background-color: #E0F7FA;
+}
+
+.frames img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}

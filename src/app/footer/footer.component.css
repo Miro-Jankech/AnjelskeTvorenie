@@ -1,0 +1,17 @@
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0A3D62;  
+  font-size: larger ;
+}
+
+.contactInfo p {
+  display: flex;
+  justify-content: center;
+}
+
+.contactInfo a  {
+  text-decoration: none;
+  color: inherit;
+}
