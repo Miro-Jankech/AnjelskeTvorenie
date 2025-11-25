@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject, OnInit } from '@angular/core';
+import { Component, DestroyRef, inject, OnInit, output } from '@angular/core';
 
 @Component({
   selector: 'app-photo-slider',
@@ -64,4 +64,5 @@ export class PhotoSliderComponent implements OnInit {
     this.sliderIndex = (this.sliderIndex - 1 + this.imgSlider.length) % this.imgSlider.length;
     this.startProgress();
   }
+
 }
