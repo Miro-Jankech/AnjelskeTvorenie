@@ -22,9 +22,9 @@ div ul li {
 
 /* styling of the icons */
 .products img {
-  width: 72px;
-  height: 72px;
-  border-radius: 36px;
+  width: 96px;
+  height: 96px;
+  border-radius: 48px;
 }
 li img {
   margin-left: 5px;

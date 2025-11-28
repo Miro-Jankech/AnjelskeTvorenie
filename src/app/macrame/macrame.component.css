@@ -1,3 +1,45 @@
+.macrame-text {
+  background-color: #E0F7FA; /* visible immediately on load */
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+
+  animation: bgColorShift 3s ease-in-out forwards;
+  animation-delay: 1s; /* wait before changing bg */
+}
+
+@keyframes bgColorShift {
+  from {
+    background-color: #E0F7FA;
+  }
+  to {
+    background-color: #f1c40f;
+  }
+}
+
+.macrame-text p {
+  opacity: 0;
+  color: white;
+  text-shadow: 0 0 8px rgba(155, 231, 155, 0.6);
+
+  animation: textFadeIn 2.5s ease-in-out forwards;
+  animation-delay: 2.2s; /* starts after bg change begins */
+}
+
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .macrame {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

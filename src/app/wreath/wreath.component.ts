@@ -29,11 +29,8 @@ export class WreathsComponent {
     'wreaths/w18.jpg',
     'wreaths/w19.jpg',
     'wreaths/w20.jpg',
-    'wreaths/w21.jpg',
     'wreaths/w22.jpg',
-    'wreaths/w23.jpg',
     'wreaths/w24.jpg',
-    'wreaths/w25.jpg',
     'wreaths/w26.jpg',
   ]
 }

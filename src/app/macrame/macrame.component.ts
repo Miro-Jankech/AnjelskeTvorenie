@@ -19,7 +19,6 @@ export class MacrameComponent {
     'macrame/ang10.jpg',
     'macrame/ang11.jpg',
     'macrame/ang12.jpg',
-    'macrame/ang12.jpg',
     'macrame/ang13.jpg',
     'macrame/ang14.jpg',
     'macrame/ang15.jpg',
