@@ -1,31 +1,65 @@
+/* =========================
+   MACRAME TEXT – ELEGANT STYLE
+========================= */
+
 .macrame-text {
-  background-color: #E0F7FA; /* visible immediately on load */
-  padding: 60px;
+  background-color: #E0F7FA;
+  padding: 50px 20px 30px;
+  text-align: center;
+  font-family: "Georgia", "Times New Roman", serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
 
-  animation: bgColorShift 3s ease-in-out forwards;
-  animation-delay: 1s; /* wait before changing bg */
+  animation: bgColorShift 1.2s ease-in-out forwards;
+  animation-delay: 0.3s;
 }
+
+.macrame-text p {
+  font-size: 1.5rem;
+  max-width: 900px;
+  line-height: 1.6;
+  color: #004D40;
+  font-style: italic;
+  position: relative;
+  opacity: 0;
+
+  animation: textFadeIn 1.2s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+/* Soft decorative dots instead of quotes */
+.macrame-text p::before {
+  content: "✦";
+  position: absolute;
+  left: -30px;
+  top: 2px;
+  font-size: 1.4rem;
+  color: #00796B;
+  opacity: 0.4;
+}
+
+.macrame-text p::after {
+  content: "✦";
+  position: absolute;
+  right: -30px;
+  top: 2px;
+  font-size: 1.4rem;
+  color: #00796B;
+  opacity: 0.4;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
 
 @keyframes bgColorShift {
   from {
     background-color: #E0F7FA;
   }
   to {
-    background-color: #f1c40f;
+    background-color: #e0f2f1; /* softer than yellow for elegance */
   }
-}
-
-.macrame-text p {
-  opacity: 0;
-  color: white;
-  text-shadow: 0 0 8px rgba(155, 231, 155, 0.6);
-
-  animation: textFadeIn 2.5s ease-in-out forwards;
-  animation-delay: 2.2s; /* starts after bg change begins */
 }
 
 @keyframes textFadeIn {
@@ -40,18 +74,21 @@
 }
 
 
+
 .macrame {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  padding: 0 20px;             /* outside margin stays */
+  gap: 10px;              /* tiny controlled gap */
+  padding: 0 20px;
   background-color: #E0F7FA;
 }
 
 .macrame img {
-  width: 100%;
+  width: 100%;          /* fill the grid cell */
   height: auto;
   object-fit: cover;
   border-radius: 6px;
-  margin-top: 20px;
+  margin-top: 0;        /* ✅ removes vertical gap */
+  display: block;      /* removes inline spacing */
 }
+

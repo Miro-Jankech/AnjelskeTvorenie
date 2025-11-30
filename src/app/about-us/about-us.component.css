@@ -1,10 +1,85 @@
-div {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.aboutUs {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 50px 40px;
+  background: #fdfdfd;
+  border-radius: 18px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: #E0F7FA;
-  font-family: "Georgia", serif;
+  gap: 24px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutUs:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+}
+
+/* Text styling */
+.aboutUs p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2f3e46;
+  text-align: center;
+  max-width: 720px;
+  font-family: "Georgia", "Times New Roman", serif;
+  position: relative;
+}
+
+/* First paragraph emphasized */
+.aboutUs p:first-child {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #004d40;
+  letter-spacing: 0.3px;
+}
+
+/* Decorative accents */
+.aboutUs p::before,
+.aboutUs p::after {
+  content: "✦";
+  position: absolute;
+  font-size: 1rem;
+  color: #00796B;
+  opacity: 0.4;
+}
+
+.aboutUs p::before {
+  left: -20px;
+  top: 4px;
+}
+
+.aboutUs p::after {
+  right: -20px;
+  top: 4px;
+}
+
+/* Map styling */
+.aboutUs iframe {
+  width: 100%;
+  height: 380px;
+  border-radius: 14px;
+  border: 2px solid #e0f2f1;
+  margin-top: 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .aboutUs {
+    padding: 30px 20px;
+    margin: 40px 12px;
+  }
+
+  .aboutUs p {
+    font-size: 1rem;
+  }
+
+  .aboutUs p:first-child {
+    font-size: 1.1rem;
+  }
 }

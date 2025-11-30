@@ -39,11 +39,14 @@ li span:hover {
   color: #f1c40f;
 }
 
-.label_frame {
+.label_macrame {
   margin-left: 7px;
+}
+.label_frame {
+  margin-left: 18px;
 }
 
 .label_wreath {
-  margin-left: 13px;
+  margin-left: 22px;
 }
 

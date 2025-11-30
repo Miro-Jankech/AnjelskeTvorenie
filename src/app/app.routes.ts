@@ -30,7 +30,7 @@ export const routes:Routes = [
     component: WreathsComponent
   },
   {
-    path: 'Onas',
+    path: 'aboutUs',
     component: AboutUsComponent
   }
 ];

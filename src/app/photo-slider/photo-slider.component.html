@@ -1,10 +1,22 @@
+<div class="quote">
+  <p>Život patrí tým, ktorí veria v krásu svojich snov."</p>
+<p>- Eleanor Roosevelt </p>
+</div>
+
 <div class="slider-container">
   <button class="nav-button left" (click)="prevImage()">&#10094;</button>
 
   <div class="image-wrapper"
        (mouseenter)="pauseProgress()"
        (mouseleave)="resumeProgress()">
-    <img [src]="imgSlider[sliderIndex]" alt="Slider Image">
+
+       <img
+       [src]="imgSlider[sliderIndex]"
+       class="slider-image"
+       [class.fade]="isFading"
+       alt="Slider Image"
+     />
+
     <div class="progress-bar">
       <div class="progress-fill" [style.width.%]="progress"></div>
     </div>
